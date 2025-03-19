@@ -1,0 +1,29 @@
+1. explain the structure of an html document and the purpose of DOCTYPE.
+ANS:  <!DOCTYPE>: declration define that this document is an html5 document
+      <html>: The <html> element is the root element of an HTML page.
+      <head>: the <head> element contains of meta information of an html page.
+      <body>: The <body> element defines the document's body, and is a container for all the visible contents.
+      <title>: the <title> specific titel of the html.
+
+      purpose of DOCTYPE:The primary purpose of the DOCTYPE declaration is to inform browsers about 
+                         the version of the markup language in which the document is written.
+
+
+2. list and explain at least five common HTML tags used in website design.
+ANS:  <h1>:  <h1> define the important heading.
+      <p> :  <p> element define the paragraphs.
+      <img>: The HTML <img> tag is used to embed an image in a web page.
+             src - Specifies the path to the image.
+             alt - Specifies an alternate text for the image.
+      <ul>:  defines an unordered list. 
+      <a> :  The <a> tag defines a hyperlink.    
+                        
+                
+3. describe the difference between block-level and inline element in HTML?
+ANS:                      
+                   block level               |             inline element           
+  1 begin a new line of the text.             1 dose not begins a new line of the text.
+  2 you can set the width and hight.          2 you can not set the width and hight.
+  3 its width extend beyona the inner         3 its width only extends as far as inner content.
+    contant.                    
+  4 example: <p>,<div>,                       4  example: <spam>,<a>
