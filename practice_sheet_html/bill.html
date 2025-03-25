@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .col-3 {
+      width: 60%;
+    }
+    .col-2 {
+      width: 40%;
+    }
+    .table-3 {
+      margin: 20px 0;
+    }
+
+    .col-two table {
+      margin-left: auto;
+    }
+
+    .col-2 table {
+      margin-left: auto;
+    }
+  </style>
+  <body>
+    <table
+      style="width: 100%; border: 1px solid black; border-collapse: collapse"
+    >
+      <tr style="background-color: black; width: 100%; color: white">
+        <th colspan="5">Invoice</th>
+      </tr>
+
+      <tr>
+        <td colspan="5">
+          <address>
+            <br />
+            civil char rasta,<br />
+            ringrod,<br />
+            surat-395002
+          </address>
+          <br /><br />
+        </td>
+      </tr>
+      <tr>
+        <td class="col-3" colspan="3">
+          <b>
+            some company <br />
+            c/o some guy
+          </b>
+        </td>
+        <td class="col-2" colspan="2">
+          <table>
+            <tr>
+              <td style="border: 1px solid black">Invoice #</td>
+              <td style="border: 1px solid black">101138</td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid black">done</td>
+              <td style="border: 1px solid black">january 1,2022</td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid black">amount date</td>
+              <td style="border: 1px solid black">rs 600.00</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="5">
+          <table style="width: 100%" class="table-3">
+            <tr>
+              <td style="border: 1px solid black">item</td>
+              <td style="border: 1px solid black">description</td>
+              <td style="border: 1px solid black">rate</td>
+              <td style="border: 1px solid black">quantity</td>
+              <td style="border: 1px solid black">price</td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid black">front end consultation</td>
+              <td style="border: 1px solid black">experiance review</td>
+              <td style="border: 1px solid black">rs 150.00</td>
+              <td style="border: 1px solid black">4</td>
+              <td style="border: 1px solid black">rs 600</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3"></td>
+        <td class="col-two" colspan="2">
+          <table>
+            <tr>
+              <td style="border: 1px solid black">total</td>
+              <td style="border: 1px solid black">rs 600.00</td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid black">amount paid</td>
+              <td style="border: 1px solid black">rs 0.00</td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid black">balance due</td>
+              <td style="border: 1px solid black">rs 600.00</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <th colspan="5">additional notes</th>
+      </tr>
+    </table>
+  </body>
+</html>
