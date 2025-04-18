@@ -1,0 +1,109 @@
+QUE:- 1 Explain the deffrence between inline,internal and external CSS?
+ ANS:-
+
+     1:- Inline style :-
+
+-> An inline style is applied to a single tag or section of the current HTML file.
+
+-> Inline style declarations are placed inside the tag.
+
+-> EX:- <h1 style="font-size: 200%; font-style: italic">
+
+     2:- Internal style sheet (also called embedded style sheet) → discussed later
+
+-> An internal style is applied to the entire current HTML file but is not applied to other files on the web site.
+
+-> Internal style declarations are placed in the header of the HTML file.
+
+    3:- External style sheet (also called linked style sheet) → discussed later
+
+-> An external style is applied to the entire HTML file and may be applied to any or all pages on the web site.
+
+-> External style declarations are written in a separate text file which is then linked to the HTML file.
+
+-> External style sheets make it easy to give a consistent look to any number of web pages.
+
+
+-----------------------------------------------------------------------------------------
+
+QUE:-2 Describe CSS selectors and list the types of selectores?
+
+   ANS    -> CSS selectors are patterns used to select the HTML elements that you want to style. The 
+
+selector targets the elements in the HTML document, and then the styles defined in the CSS rule 
+
+are applied to those elements. CSS selectors allow you to apply styles based on various 
+
+factors, such as element type, class, ID, attribute, or relationships between elements
+
+                Type of selectors:-
+
+  1 Universal Selector (*)                9 Group Selector (,)
+
+  2 Class Selector (.)                 
+
+  3 ID Selector (#)
+
+  4 Child Selector (>)
+
+  5 General Sibling Selector (~)
+
+  6 Attribute Selector ([])
+
+  7 Pseudo-class Selector (:)
+
+  8 Pseudo-element Selector (::)
+
+----------------------------------------------------------------------------------------------
+           
+QUE:- 3 Discuss the css box model and uts components?
+
+ANS:-  The CSS box model is a fundamental concept in web design and layout. It defines how the 
+
+space around an element is structured and how different parts of an element's dimensions 
+
+(width, height, padding, border, margin) interact. Understanding the box model is crucial for 
+
+controlling element positioning, spacing, and layout on a web page.
+
+The box model consists of several components that define the size and spacing of an element.
+
+
+1. Content:-
+ 
+-> The content area is the innermost part of the box, where the actual content (text, images, 
+ 
+ etc.) of the element is displayed.
+
+ 2. Padding:-
+
+ ->Padding is the space between the content and the border. It creates a buffer around the 
+ 
+ content, providing spacing within the element itself.
+
+ ->Padding increases the overall size of the box because it adds space around the content.
+
+ 3. Border
+
+-> The border wraps around the padding (if any) and content area. It’s a visual line that can 
+
+have various styles (solid, dashed, dotted, etc.), thickness, and color.
+
+-> Impact on Layout: The border increases the overall size of the box, and its width adds to 
+
+the box's total dimensions.
+
+4. Margin
+
+-> Margin is the outermost space around an element. It creates space between the element and 
+
+its surrounding elements. The margin does not affect the element’s background or border but 
+
+creates space outside the box.
+
+-> Impact on Layout: Margins do not affect the element’s dimensions directly, but they control 
+
+the distance between elements. Margins can collapse, meaning that if two adjacent elements have 
+
+margins, the larger of the two will be used.
+

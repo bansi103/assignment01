@@ -1,0 +1,68 @@
+QUE 1 what is  css grid and how it is difference from flexbox?
+
+ANS:-
+-> CSS Grid is a 2-dimensional layout system in CSS. It allows you to design web 
+   layouts using both rows and columns at the same time.
+-> CSS Grid lets you build layouts like a table, but with way more flexibility and power.
+-> You can position items horizontally and vertically (in rows and columns).
+
+difference:-
+          Feature                    CSS Grid                             Flexbox   
+
+         Layout Type	         2D (rows and columns)	                    1D (rows or columns)
+         Direction               Works in both directions	                Works in one direction at a time
+         Control                 Full control over rows & columns	        Controls flow of items in a line
+        Item Positioning	     You can place items into specific cells	Depends on content flow/order
+
+--------------------------------------------------------------------------------------------------------------------
+
+QUE 2 Describe the CSS Grid properties grid-template-columns and grid-template-rows?
+
+ANS:- 
+
+ 1. grid-template-columns:-
+        Defines the number of columns in your grid and their widths.
+
+  example:-
+  
+        .container {
+  display: grid;
+  grid-template-columns: 200px 1fr 2fr;
+}
+
+Creates 3 columns:
+First column: 200px wide.
+Second column: Takes 1 fraction of the remaining space.
+Third column: Takes 2 fractions of the remaining space.
+
+grid-template-rows:-
+        Defines the number of rows and their heights in your grid layout.
+
+ example:-
+  
+  .container {
+  display: grid;
+  grid-template-rows: 100px auto 50%;
+}
+     
+Creates 3 rows:
+
+First row: 100px tall.
+Second row: Height adjusts based on content (auto).
+Third row: Takes up 50% of the container’s height.
+
+----------------------------------------------------------------------------------------
+
+QUE 3 Explain the purpose of grid-area and how it is used to create complex layouts?
+
+ANS :-
+
+ Purpose:
+The grid-area property is used to:-
+-> Name areas in your grid layout.
+-> Place items into specific areas of the grid by using those names.
+-> Create semantic, readable, and organized layouts.
+
+There are two ways it can be used:
+-> To name an area (using grid-template-areas).
+-> To position an item (with row and column line numbers).

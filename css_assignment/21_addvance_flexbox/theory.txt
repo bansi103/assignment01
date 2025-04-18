@@ -1,0 +1,125 @@
+QUE  1. Explain the purpose of Flexbox and its benefits for responsive design.
+
+ANS:-
+Flexbox is a CSS layout model designed to make it easier to create complex 
+and flexible layouts without relying on floats or positioning. It provides a
+ more efficient way to distribute space among items in a container, even when
+  the sizes of the items are unknown or dynamic.
+
+ Purpose of Flexbox:
+
+- Aligning elements vertically and horizontally within a container.
+- Distributing space between items in a way that adapts to different screen 
+  sizes or container sizes.
+- Easily creating layouts where items adjust to varying amounts of content.
+
+
+ Benefits for Responsive Design:
+1. Automatic Adjustment:
+   - Flexbox makes it easier to create fluid layouts that adapt to different
+    screen sizes. You don’t need to manually adjust widths or margins for
+     each screen size. The flex items will adjust their size to fill the 
+     container or wrap to new lines as needed.
+
+2. Equal Distribution of Space:
+   - With properties like `justify-content` and `align-items`, Flexbox allows
+    for equal distribution of space between elements, ensuring consistent 
+    spacing even when the number of elements or their size changes.
+
+3. Simplified Centering:
+   - Centering elements both horizontally and vertically becomes straightforward
+     with Flexbox using `justify-content: center` and `align-items: center`.
+     This is much simpler than using older techniques like `position: absolute`
+      or `margin: auto`.
+
+4. Flexibility in Alignment:
+   - Flexbox makes it easy to align items in various ways, whether it’s to 
+     the start, center, or end of a container, or even in a grid-like fashion 
+     that reflows on different screen sizes.
+
+5. No Need for Media Queries for Layout Changes:
+   - Flexbox is often more fluid than traditional methods, reducing the need 
+    for excessive media queries when designing for different screen sizes.
+    However, media queries can still be used in conjunction with Flexbox 
+    for more fine-tuned control.
+
+6. Better Control over Item Sizing:
+   - Flexbox lets you define how much space items should take up relative
+    to each other, ensuring that your layout adapts efficiently without 
+    breaking the design.
+
+---------------------------------------------------------------------------------
+
+QUE 2. Describe the main properties of Flexbox (flex-direction, justify-content, align-Items).
+
+ANS:- 
+
+1. flex-direction
+The flex-direction property defines the direction in which the flex container's
+ items are placed. It determines the primary axis along which the flex items are
+ laid out.
+
+Values:
+
+   row (default): Items are placed in a horizontal row, from left to right .
+   row-reverse: Items are placed in a horizontal row, but in reverse order.
+   column: Items are placed in a vertical column, from top to bottom.
+   column-reverse: Items are placed in a vertical column, but in reverse order.
+
+2. justify-content
+  The justify-content property controls the alignment of flex items along 
+  the main axis . It helps distribute space between and around items.
+
+Values:
+
+flex-start (default): Items are aligned at the start of the container.
+
+flex-end: Items are aligned at the end of the container.
+
+center: Items are centered within the container.
+
+space-between: Items are distributed with equal space between them.
+ The first item is at the start, and the last item is at the end.
+
+space-around: Items are distributed with equal space around them.
+ This means there's equal space before the first item and after the last item.
+
+space-evenly: Items are distributed with equal space between them, 
+including the space before the first item and after the last item.
+
+3. align-items
+The align-items property controls the alignment of flex items along the cross axis.
+ It determines how items are aligned vertically (if flex-direction is row)
+or horizontally (if flex-direction is column).
+
+Values:
+
+stretch (default): Items stretch to fill the container along the cross axis.
+
+flex-start: Items are aligned at the start of the container .
+
+flex-end: Items are aligned at the end of the container .
+
+center: Items are centered along the cross axis.
+
+baseline: Items are aligned such that their baselines align.
+
+--------------------------------------------------------------------------------------
+
+QUE 3. Discuss the difference between flex-grow, flox-shrink, and flex-basin.
+
+
+ 1. flex-grow:-
+   :- Controls how much a flex item will grow relative to the rest of  the 
+      items if there is extra space in the container.
+        Default value: 0 (items won’t grow unless you tell them to).
+
+  2. flex-shrink
+    :- Controls how much a flex item will shrink relative to the rest when there's not 
+      enough space.
+      Default value: 1 (items can shrink if needed). 
+
+      3. flex-basis
+    :- Sets the initial size of a flex item before it’s affected by flex-grow or 
+       flex-shrink.
+       Default value: auto (which means the item’s natural size or width/height).     

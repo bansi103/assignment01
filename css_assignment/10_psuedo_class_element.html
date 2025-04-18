@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* p:hover::selection{
+            color: rgb(223, 216, 230);
+            background-color: red;
+        } */
+        p:hover::first-line{
+            color: rgb(223, 216, 230);
+            background-color: rgb(165, 156, 156);
+        }
+        p:active::first-line{
+            color: red;
+        }
+        p:visited::first-line{
+            color:yellowgreen ;
+        }
+        a:visited {
+            color: yellowgreen;
+        }
+        p::before{
+            content: "😊😊";
+        }
+        p::after{
+            content: "👍😎";
+        }
+
+        
+        
+    </style>
+</head>
+
+<body>
+    <a href="">Click here to visit</a>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates fugiat deserunt vero asperiores molestias
+        dolorum ad maxime, corrupti voluptas veritatis esse quidem minima perferendis eos maiores soluta, magnam dolorem
+        voluptate.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis illo quidem adipisci molestiae blanditiis
+        repellendus voluptate sunt saepe quibusdam, iusto ad! Saepe ab pariatur nisi asperiores distinctio eius
+        inventore amet?
+    </p>
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 600px;
+            margin: 200px auto;
+            text-align: center;
+        }
+        .div{
+            height: 200px;
+            width: 200px;
+            background-color: aquamarine;
+            animation-name: move;
+            animation-duration: 4s;
+            animation-delay: 1s;
+            animation-timing-function:ease;
+            animation-iteration-count: infinite;
+            animation-fill-mode: both;
+            animation-direction: alternate;
+        }
+        @keyframes move {
+            from{
+                background-color: aquamarine;
+                transform: translate(1px);
+                border-radius: 0%;
+            }
+            to{
+                background-color: rgb(29, 89, 69);
+                transform: translate(500px);
+                border-radius: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="div"></div>
+    
+</body>
+</html>

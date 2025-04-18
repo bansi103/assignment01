@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .main {
+            background-color: white;
+            display: grid;
+            grid-template-columns: auto auto;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin: 50px auto;
+        }
+
+        #img {
+            height: 200px;
+            width: 200px;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+
+        }
+
+
+
+
+
+        @media(min-width:600px) {
+
+            .main {
+                background-color: white;
+                display: grid;
+                grid-template-columns: auto auto auto;
+                align-items: center;
+                justify-content: center;
+                padding: 20px;
+                margin: 50px auto;
+
+            }
+
+            #img {
+                height: 200px;
+                width: 200px;
+            }
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 20px;
+
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="img1 " id="img"><img src="./photo/1_tiger.webp" alt=""></div>
+        <div class="img2" id="img"><img src="./photo/2_Giraffe.avif" alt=""></div>
+        <div class="img3" id="img"><img src="./photo/3_dogs.avif" alt=""></div>
+        <div class="img4" id="img"><img src="./photo/4_Panda.jpg" alt=""></div>
+        <div class="img5" id="img"><img src="./photo/5_baby-animal.avif" alt=""></div>
+        <div class="img6" id="img"><img src="./photo/6_images.jpg" alt=""></div>
+
+    </div>
+
+</body>
+
+</html>

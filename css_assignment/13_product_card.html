@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .card {
+            width: 200px;
+            height: 300px;
+            background-color: white;
+            text-align: center;
+            margin: 100px auto;
+            border-radius: 10px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.9);
+        }
+
+        .card:hover {
+            background-color: rgb(96, 199, 239);
+            transform: background-color 2s ease-in;
+            box-shadow: 2px 2px 2px 2px;
+            color: white;
+        }
+
+        img {
+            height: 100px;
+            width: 70px;
+        }
+
+        p {
+            margin: 9px 10px;
+        }
+
+        h2 {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <img src="./photo/shirt.jpg" alt="Product Image">
+        <div class="card-body">
+            <h2 class="product-title">Product Title</h2>
+            <p class="product-description">This is a great product that you will love. It's packed with features and
+                great quality.</p>
+            <p class="product-price">$29.99</p>
+        </div>
+    </div>
+</body>
+
+</html>
