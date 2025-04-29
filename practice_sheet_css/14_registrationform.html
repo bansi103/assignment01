@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .img1 {
+            background-image: url(https://blog.henrys.com/wp-content/uploads/Camera-Lens.jpg);
+            height: 720px;
+            width: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            
+
+        }
+
+        .form {
+            height: 690px;
+            width: 400px;
+            background-color: white;
+            padding-left: 20px;
+            margin: 9px;
+            text-align: center;
+            position: relative;
+        }
+        .cencel{
+            position: absolute;
+            right: 6px;
+            top: 6px;
+        }
+
+        strong {
+            color: blue;
+
+
+        }
+
+        p {
+            margin: 20px 2px;
+            font-size: 20px;
+        }
+
+        input {
+            padding: 9px 150px 5px 10px;
+            margin: 5px;
+
+
+        }
+
+        .b1 {
+            padding: 8px 137px;
+            margin: 15px;
+            background-color: blue;
+            color: white;
+        }
+
+        .b2 {
+            padding: 8px 95px;
+            margin: 10px;
+            background-color:red;
+            color: white;
+        }
+
+        .b3 {
+            padding: 8px 93px;
+            background-color: rgb(4, 4, 125);
+            color: white;
+        }
+
+        .s1 {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="img1">
+        <div class="form">
+            <div class="cencel"><i class="fa-solid fa-xmark"></i>
+
+            </div>
+            <p><strong>REGISTRATION</strong></p>
+            <input type="text" placeholder="User name"><br>
+            <input type="email" placeholder="Email Id"><br>
+            <input type="password" placeholder="Password"><br>
+            <input type="password" placeholder="Comform Password"><br>
+            <button class="b1">Register</button><br>
+            <span>Have a an account? <span class="s1">Sing in</span></span><br><br>
+            <hr>
+            <button class="b2"> <i class="fa-brands fa-google"></i> sing up with google</button><br>
+            <button class="b3"><i class="fa-brands fa-facebook-f"></i> sing up with facbook</button>
+
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

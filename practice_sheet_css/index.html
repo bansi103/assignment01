@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Card</title>
+    <style>
+        .card {
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        @media (min-width: 600px) {
+            .card {
+                flex-direction: row;
+                align-items: center;
+            }
+        }
+
+        .card-image {
+            flex: 1;
+            max-width: 100%;
+        }
+
+        .card-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .card-content {
+            flex: 2;
+            padding: 1rem;
+        }
+
+        .card-content h2 {
+            margin: 0 0 0.5rem;
+        }
+
+        .card-content p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <div class="card-image">
+            <img src="https://www.cityguide-dubai.com/fileadmin/_processed_/3/3/csm_img-worlds-of-adventures-teaser_40e4184da1.jpg"
+                alt="Card image">
+        </div>
+        <div class="card-content">
+            <h2>Responsive Card</h2>
+            <p>This card layout adjusts automatically based on screen size using CSS Flexbox and media queries.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

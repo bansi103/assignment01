@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .img1 {
+            width: 300px;
+            margin: 100px auto;
+            position: relative;
+        }
+
+        img {
+            max-width: 100%;
+            vertical-align: middle;
+
+        }
+
+        .div2 {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.591);
+            color: white;
+            display: grid;
+            place-content: center;
+            transform: scale(0);
+            transition: 0.6s ease;
+
+        }
+
+        .img1:hover .div2 {
+            transform: scale(1);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="img1">
+        <img src="../assest/4_Panda.jpg" alt="">
+
+        <div class="div2">
+            <p>IMAGE OVERLAY</p>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
