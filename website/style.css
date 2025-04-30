@@ -1,0 +1,166 @@
+@import url('media.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top-header .info {
+    background-color: black;
+    padding: 12px 80px;
+
+}
+
+.top-header .info ul {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    list-style: none;
+
+}
+
+
+
+
+
+/* ------------------------------------------------------------------------------ */
+.second-header {
+    position: sticky;
+    top: 0;
+}
+
+.second-header .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 12px 80px;
+    color: white;
+}
+
+.second-header .header .info {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.second-header .header .info ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    transition: color 0.3s ease;
+}
+
+.second-header .header .info ul li {
+    text-transform: capitalize;
+}
+
+
+
+.second-header .header .info .btn button {
+    padding: 15px 18px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(200, 169, 126);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.second-header .header .info .btn button:hover {
+    background-color: white;
+    color: black;
+}
+
+.second-header .info ul .contact-about {
+    position: relative;
+
+}
+
+.second-header .info ul .contact-about:hover .contact-data {
+    display: block;
+}
+
+.second-header .info ul .contact-about .contact-data {
+    position: absolute;
+    width: 250px;
+    top: 35px;
+    text-align: center;
+    left: -100px;
+    display: none;
+    transition: .contact-data 0.5s ease 3s;
+
+}
+
+.second-header .info ul .contact-about .contact-data h4 {
+    background-color: black;
+    padding: 10px;
+}
+
+.second-header .info ul .contact-about .contact-data input {
+    width: 100%;
+    padding: 5px 10px;
+
+}
+
+.second-header .info ul .contact-about .contact-data textarea {
+    width: 100%;
+    padding: 5px 10px;
+}
+
+.second-header .info ul .contact-about .contact-data button {
+    width: 100%;
+    padding: 5px 10px;
+    background-color: rgb(200, 169, 126);
+    ;
+}
+
+/* ----------------------------------------------------------------------------------------- */
+
+.section-1 {
+    background-image: url(https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmVzdGF1cmFudHxlbnwwfHwwfHx8MA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    padding: 12px 80px;
+
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.main .div1 {
+    background-color: black;
+    width: fit-content;
+    height: 300px;
+    text-align: center;
+    /* margin-top:200px ; */
+    padding-top: 50px;
+    border-radius: 10px;
+}
+
+.main .div1 .photo {
+    height: 120px;
+    width: 120px;
+    background-color: red;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 60px;
+}
+
+.main .div1 .photo img {
+    height: 120px;
+    width: 120px;
+}
+
+.main .div1 .text p {
+    color: white;
+    font-size: 20px;
+    padding: 4px 10px;
+}
